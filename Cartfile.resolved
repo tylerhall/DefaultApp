@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "5.0.2"
+github "SwiftyJSON/SwiftyJSON" "5.0.0"
+github "microsoft/appcenter-sdk-apple" "3.0.0"
+github "sparkle-project/Sparkle" "v1.23.0"

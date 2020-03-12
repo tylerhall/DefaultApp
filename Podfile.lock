@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (5.0.2)
+  - AppCenter (3.0.0):
+    - AppCenter/Analytics (= 3.0.0)
+    - AppCenter/Crashes (= 3.0.0)
+  - AppCenter/Analytics (3.0.0):
+    - AppCenter/Core
+  - AppCenter/Core (3.0.0)
+  - AppCenter/Crashes (3.0.0):
+    - AppCenter/Core
+  - Sparkle (1.23.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AppCenter
+  - Sparkle
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AppCenter
+    - Sparkle
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  AppCenter: 7a0bbe928d07467ac8b2d7f6f2a675872a6471d8
+  Sparkle: 55b1a87ba69d56913375a281546b7c82dec95bb0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: d04f03e848d04265002187d67801b239520d9bcb
+
+COCOAPODS: 1.8.4

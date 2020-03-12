@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="SidebarTableCellView" id="c22-O7-iKe" customClass="SidebarTableCellView" customModule="Amnesia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="655" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-w9-9Mt">
+                    <rect key="frame" x="0.0" y="4" width="114" height="18"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOL-BD-XFN">
+                            <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="20k-rH-Fki"/>
+                                <constraint firstAttribute="width" constant="18" id="hn2-St-UQb"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="SidebarCalendar" id="Dcs-Ek-CRG"/>
+                        </imageView>
+                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Z6-KX-Wbx">
+                            <rect key="frame" x="20" y="1" width="96" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" allowsEditingTextAttributes="YES" id="3A7-e2-x0W">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-kw-4fn">
+                    <rect key="frame" x="597" y="4" width="54" height="18"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-oE-ii9">
+                            <rect key="frame" x="-2" y="3" width="32" height="12"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Detail" id="5H0-hi-XIS">
+                                <font key="font" size="11" name="HelveticaNeue"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-Ai-5QE">
+                            <rect key="frame" x="36" y="0.0" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="8EP-W1-Qjz"/>
+                                <constraint firstAttribute="height" constant="18" id="WxJ-Aw-qIl"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="SidebarRecording" id="RbC-AJ-hY6"/>
+                        </imageView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aY2-kw-4fn" secondAttribute="trailing" constant="4" id="1gM-XG-3sV"/>
+                <constraint firstItem="aY2-kw-4fn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gBL-w9-9Mt" secondAttribute="trailing" constant="8" id="1jq-uN-8L8"/>
+                <constraint firstItem="gBL-w9-9Mt" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="4" id="EI1-jO-FSR"/>
+                <constraint firstItem="aY2-kw-4fn" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="4" id="KJf-7U-HxW"/>
+                <constraint firstAttribute="bottom" secondItem="gBL-w9-9Mt" secondAttribute="bottom" constant="4" id="OtI-0c-vpQ"/>
+                <constraint firstItem="gBL-w9-9Mt" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="R2b-DK-HFJ"/>
+                <constraint firstAttribute="bottom" secondItem="aY2-kw-4fn" secondAttribute="bottom" constant="4" id="vTF-uq-t47"/>
+            </constraints>
+            <connections>
+                <outlet property="detailImageView" destination="RRR-Ai-5QE" id="VfS-LM-K4C"/>
+                <outlet property="detailTextField" destination="2TY-oE-ii9" id="wPN-Ch-n3W"/>
+                <outlet property="imageView" destination="eOL-BD-XFN" id="SRh-BF-1Vg"/>
+                <outlet property="textField" destination="2Z6-KX-Wbx" id="A2f-TQ-Lxd"/>
+            </connections>
+            <point key="canvasLocation" x="-29.5" y="-101"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="SidebarCalendar" width="36" height="36"/>
+        <image name="SidebarRecording" width="224.5" height="224.5"/>
+    </resources>
+</document>
