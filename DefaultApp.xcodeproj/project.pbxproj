@@ -228,7 +228,6 @@
 			children = (
 				C6FF25C7241A8E9600C896DA /* MainWindowController */,
 				C6FF25CD241A932F00C896DA /* PrefsWindowController */,
-				C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +243,7 @@
 		C6FF25BB241A8D7700C896DA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */,
 				C6FF25DF241A968B00C896DA /* Controls */,
 				C6FF25DE241A968300C896DA /* Views */,
 				C6FF25D2241A94C300C896DA /* Sidebar */,
