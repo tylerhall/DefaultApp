@@ -7,6 +7,10 @@
 
 import Foundation
 
+#if os(iOS)
+import UIKit
+#endif
+
 class Constants {
 
     // The name of the user's Mac/iDevice. I occasionally have a use for this - especially
@@ -15,7 +19,11 @@ class Constants {
     static var hostname: String?
     static func getHostname(_ completion: ((String?) -> ())?  = nil) {
         DispatchQueue.global(qos: .background).async {
+            #if os(macOS)
             Constants.hostname = Host.current().localizedName
+            #else
+            Constants.hostname = UIDevice.current.name
+            #endif
             completion?(Constants.hostname)
         }
     }
