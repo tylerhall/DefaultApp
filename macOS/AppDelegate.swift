@@ -34,6 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         Constants.getHostname()
 
+        NSApp.registerForRemoteNotifications(matching: .init(rawValue: 0))
         #if SPARKLE
         setupForNonMASBuild()
         #endif
