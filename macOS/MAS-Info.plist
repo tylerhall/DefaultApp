@@ -18,10 +18,6 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -31,36 +27,40 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
+	<false/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<false/>
+	</dict>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Click On Tyler. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>DefaultApp.ASApplication</string>
-	<key>SUFeedURL</key>
-	<string></string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
 	<key>NSSupportsAutomaticTermination</key>
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<false/>
-	<key>LSUIElement</key>
-	<false/>
-	<key>NSAppleScriptEnabled</key>
-	<true/>
-	<key>OSAScriptingDefinition</key>
-	<string>DefaultApp.sdef</string>
 	<key>NSUserNotificationAlertStyle</key>
 	<string>banner</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsLocalNetworking</key>
-		<false/>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
-		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-	</dict>
+	<key>OSAScriptingDefinition</key>
+	<string>DefaultApp.sdef</string>
+	<key>SUFeedURL</key>
+	<string></string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>

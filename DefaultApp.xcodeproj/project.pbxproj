@@ -720,7 +720,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap\" -DSPARKLE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DefaultApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -755,7 +755,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap\" -DSPARKLE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DefaultApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -790,7 +790,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap\" -DMAS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DefaultApp;
 				PRODUCT_NAME = DefaultApp;
 				SWIFT_VERSION = 5.0;
 			};
@@ -824,7 +824,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap\" -DMAS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DefaultApp;
 				PRODUCT_NAME = DefaultApp;
 				SWIFT_VERSION = 5.0;
 			};
