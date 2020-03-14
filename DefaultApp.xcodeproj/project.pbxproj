@@ -10,6 +10,8 @@
 		1A9B9E0AFF003A6E7761F745 /* libPods-DefaultApp-MAS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 722ACDBF24CA44A45D677BD4 /* libPods-DefaultApp-MAS.a */; };
 		9D05591A7E1E3DDDC915FD12 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		C62994FC241AD3FD00B9DD57 /* MAS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C62994FB241AD3FD00B9DD57 /* MAS-Info.plist */; };
+		C6891229241D1C7D0086397B /* MenuBarStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */; };
+		C689122A241D1C7D0086397B /* MenuBarStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */; };
 		C6FF2581241A866F00C896DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FF2580241A866F00C896DA /* AppDelegate.swift */; };
 		C6FF2583241A867400C896DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FF2582241A867400C896DA /* Assets.xcassets */; };
 		C6FF2586241A867400C896DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FF2584241A867400C896DA /* MainMenu.xib */; };
@@ -90,6 +92,7 @@
 		722ACDBF24CA44A45D677BD4 /* libPods-DefaultApp-MAS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DefaultApp-MAS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62994FB241AD3FD00B9DD57 /* MAS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MAS-Info.plist"; sourceTree = "<group>"; };
 		C62D92F4241ADE6C000D5F8A /* macOS-MAS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "macOS-MAS.entitlements"; sourceTree = "<group>"; };
+		C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarStatusItem.swift; sourceTree = "<group>"; };
 		C6FF257D241A866F00C896DA /* DefaultApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FF2580241A866F00C896DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FF2582241A867400C896DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +228,7 @@
 			children = (
 				C6FF25C7241A8E9600C896DA /* MainWindowController */,
 				C6FF25CD241A932F00C896DA /* PrefsWindowController */,
+				C6891228241D1C7D0086397B /* MenuBarStatusItem.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -534,6 +538,7 @@
 				C6FF25AB241A8B8600C896DA /* MainWindowController.swift in Sources */,
 				C6FF25E8241A9F3900C896DA /* ASApplication.swift in Sources */,
 				C6FF25CA241A8EB300C896DA /* Constants.swift in Sources */,
+				C6891229241D1C7D0086397B /* MenuBarStatusItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +561,7 @@
 				C6FF25F8241AA46800C896DA /* MainWindowController.swift in Sources */,
 				C6FF25F9241AA46800C896DA /* ASApplication.swift in Sources */,
 				C6FF25FA241AA46800C896DA /* Constants.swift in Sources */,
+				C689122A241D1C7D0086397B /* MenuBarStatusItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,9 +21,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // can hide it in Mac App Store (non-Sparkle) builds.
     @IBOutlet weak var checkForUpdatesMenuItem: NSMenuItem!
 
+    // Just a sample NSMenu for the status bar item
+    @IBOutlet weak var statusBarMenu: NSMenu!
+
     // My apps almost always have both of these window controllers. Substitute with your own.
     lazy var mainWindowController: MainWindowController = { MainWindowController(windowNibName: String(describing: MainWindowController.self)) }()
     lazy var prefsWindowController: PrefsWindowController = { PrefsWindowController(windowNibName: String(describing: PrefsWindowController.self)) }()
+
+    let statusItem = MenuBarStatusItem()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         registerDefaults()
@@ -35,6 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Constants.getHostname()
 
         NSApp.registerForRemoteNotifications(matching: .init(rawValue: 0))
+        
         #if SPARKLE
         setupForNonMASBuild()
         #endif
@@ -42,7 +48,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         #if MAS
         setupForMASBuild()
         #endif
-        
+
+        // The menubar status item is enabled by default, but
+        // it isn't visible until you set a title or image.
+        // statusItem.setTitle("Hello!")
+        // statusItem.setImageNamed("something")
+        //
+        // A menu can be set to appear when the item is clicked.
+        // statusItem.setMenu(statusBarMenu)
+
         showMainWindow(nil)
     }
     

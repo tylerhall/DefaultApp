@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
     </dependencies>
     <objects>
@@ -14,6 +15,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DefaultApp" customModuleProvider="target">
             <connections>
                 <outlet property="checkForUpdatesMenuItem" destination="cyl-PD-5vU" id="DgQ-Pa-9dj"/>
+                <outlet property="statusBarMenu" destination="lIL-ob-yMK" id="oa7-Wn-HTr"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -693,6 +695,20 @@
                 <outlet property="delegate" destination="Voe-Tx-rLC" id="Ji0-T3-TPa"/>
             </connections>
             <point key="canvasLocation" x="-102" y="-188"/>
+        </menu>
+        <menu id="lIL-ob-yMK">
+            <items>
+                <menuItem title="Status Item 1" id="MuA-Db-4Vj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Status Item 2" id="jJK-uL-O2B">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Status Item 3" id="JKC-eL-15I">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-177" y="94"/>
         </menu>
     </objects>
 </document>
