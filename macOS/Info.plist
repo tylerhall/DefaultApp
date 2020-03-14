@@ -47,6 +47,8 @@
 	<false/>
 	<key>NSAppleScriptEnabled</key>
 	<true/>
+	<key>LSUIElement</key>
+	<false/>
 	<key>OSAScriptingDefinition</key>
 	<string>DefaultApp.sdef</string>
 	<key>NSUserNotificationAlertStyle</key>
