@@ -165,3 +165,11 @@ extension NSOutlineView {
         }
     }
 }
+
+extension NSEvent {
+    var isRightClick: Bool {
+        let rightClick = (self.type == .rightMouseDown)
+        let controlClick = self.modifierFlags.contains(.control)
+        return rightClick || controlClick
+    }
+}
