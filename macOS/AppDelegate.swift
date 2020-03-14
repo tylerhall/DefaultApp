@@ -31,6 +31,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Enable Microsoft AppCenter
         // MSCrashes.setDelegate(self)
         // MSAppCenter.start("", withServices:[MSAnalytics.self, MSCrashes.self])
+        
+        Constants.getHostname()
 
         #if SPARKLE
         setupForNonMASBuild()
