@@ -9,8 +9,17 @@ import Cocoa
 
 class BackgroundColorView: NSView {
 
-    @IBInspectable var namedBackgroundColor: String = ""
-    @IBInspectable var backgroundColor: NSColor = .white
+    @IBInspectable var namedBackgroundColor: String = "" {
+        didSet {
+            updateLayer()
+        }
+    }
+
+    @IBInspectable var backgroundColor: NSColor = .white {
+        didSet {
+            updateLayer()
+        }
+    }
     
     override func updateLayer() {
         if let color = NSColor(named: NSColor.Name(namedBackgroundColor)) {
