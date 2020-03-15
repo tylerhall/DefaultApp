@@ -7,18 +7,16 @@
 
 import Cocoa
 
-// Ahh, yes. AppKit.
 class BackgroundColorView: NSView {
-    
-    @IBInspectable var backgroundColor: NSColor! {
-        didSet {
-            setNeedsDisplay(bounds)
-        }
-    }
 
-    override func draw(_ dirtyRect: NSRect) {
-        backgroundColor.setFill()
-        bounds.fill()
-        super.draw(dirtyRect)
+    @IBInspectable var namedBackgroundColor: String = ""
+    @IBInspectable var backgroundColor: NSColor = .white
+    
+    override func updateLayer() {
+        if let color = NSColor(named: NSColor.Name(namedBackgroundColor)) {
+            layer?.backgroundColor = color.cgColor
+        } else {
+            layer?.backgroundColor = backgroundColor.cgColor
+        }
     }
 }
