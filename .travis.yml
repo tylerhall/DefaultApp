@@ -1,6 +1,6 @@
+os: osx
 language: objective-c
 xcode_workspace: DefaultApp.xcworkspace
 xcode_scheme: DefaultApp macOS
 xcode_destination: platform=macOS
 osx_image: xcode11.3
-
