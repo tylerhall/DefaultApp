@@ -3,3 +3,4 @@ find . ! -name '.DS_Store' ! -name 'renameApp.sh' ! -path '*.git*' ! -path '*Pod
 mv "DefaultApp.xcodeproj" "$1.xcodeproj"
 mv "DefaultApp.xcworkspace" "$1.xcworkspace"
 mv "macOS/Resources/DefaultApp.sdef" "macOS/Resources/$1.sdef"
+git remote rm origin
